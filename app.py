@@ -88,8 +88,8 @@ def predict():
         # Render the template with the point estimate and prediction intervals
         return render_template(
             "index.html",
-            point_estimate=f"The predicted price of this house is ${point_estimate:.2f}",
-            lower_bound=f"The price usually lies between ${lower_bound:.2f} and ${upper_bound:.2f}",
+            point_estimate=f"The predicted price of this house is ${point_estimate:.2f}M",
+            lower_bound=f"The price usually lies between ${lower_bound:.2f}M and ${upper_bound:.2f}M",
         )
     except Exception as e:
         # Handle exceptions and display an error message

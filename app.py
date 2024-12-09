@@ -60,7 +60,7 @@ def predict():
         )
 
         # Bootstrap procedure for prediction intervals
-        n_iterations = 10
+        n_iterations = 1000
         predictions = np.zeros(n_iterations)
         
         for i in range(n_iterations):
